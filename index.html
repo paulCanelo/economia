@@ -61,7 +61,7 @@
 				</li>
 			</ul>
 		</div>
-		<div id="Introduccion">
+		<div id="introduccion">
 			<div class="text_img clearfix">
 				<div class="text">
 					<div class="titulo" style="margin-bottom: 20px;">
@@ -112,7 +112,7 @@
 
 		<div id="griegos_aportes" class="seccion clearfix comentarios">
 			<div class="titulo">
-				<p>APORTES</p> <!-- Borde antes -->
+				<p>APORTES</p> 
 				<h1>PRINCIPALES APORTES DE LOS GRIEGOS</h1>
 			</div>
 			<div class="clearfix listComentarios">
@@ -121,49 +121,49 @@
 						<div id="mensaje">
 							<div id="encabezado" class="clearfix">
 								<div class="text">
-									<p></p>
-									<p>COMPANY</p>
+									<p>JENOFONTE</p>
+									<p>430 AC - 355 AC</p>
 								</div>
 								<span class="icon-right-quote"></span>
 							</div>
-							<p class="mensaje">COMPANY IS VERY GOOD, TOP FIRST COMPANYS DEVELOP, TOP FIRST COMPANYS DEVELOP.</p>
+							<p class="mensaje">RESUMEN.</p>
 						</div>
-						<img src="imagenes/perfil.jpg">
+						<img src="imagenes/jenofonte.jpg">
 					</li>
 
 					<li>
 						<div id="mensaje">
 							<div id="encabezado" class="clearfix">
 								<div class="text">
-									<p>JANET JACKSON</p>
-									<p>COMPANY</p>
+									<p>PLATON</p>
+									<p>428 AC - 347 AC</p>
 								</div>
 								<span class="icon-right-quote"></span>
 							</div>
-							<p class="mensaje">COMPANY IS VERY GOOD, TOP FIRST COMPANYS DEVELOP, TOP FIRST COMPANYS DEVELOP.</p>
+							<p class="mensaje">DESCRIPCION.</p>
 						</div>
-						<img src="imagenes/perfil.jpg">
+						<img src="imagenes/platon.jpg">
 					</li>
 
 					<li>
 						<div id="mensaje">
 							<div id="encabezado" class="clearfix">
 								<div class="text">
-									<p>JANET JACKSON</p>
-									<p>COMPANY</p>
+									<p>ARISTÓTELES</p>
+									<p>384 AC - 322 AC</p>
 								</div>
 								<span class="icon-right-quote"></span>
 							</div>
-							<p class="mensaje">COMPANY IS VERY GOOD, TOP FIRST COMPANYS DEVELOP, TOP FIRST COMPANYS DEVELOP.</p>
+							<p class="mensaje">INFORMACIÓN.</p>
 						</div>
-						<img src="imagenes/perfil.jpg">
+						<img src="imagenes/aristoteles.jpg">
 					</li>
 				</ul>
 			</div>
 		</div>
 
 
-		<div id="griegos_autores" class="linea_tiempo">
+		<!--<div id="griegos_autores" class="linea_tiempo">
 			<div class="left">
 				<div class="text_li">
 					<div class="contenedor_li">
@@ -197,7 +197,7 @@
 				</div>
 				<div class="titulo_li">TITULO D ESTE MENUY</div>
 			</div>
-		</div>
+		</div>-->
 
 
 		<!-- ROMANOS -->
@@ -376,6 +376,7 @@
 		display: block;
 		border-left: 4px solid transparent;
 		color: white;
+		cursor: pointer;
 	}
 	.active{
 		background: white;
@@ -467,7 +468,6 @@
 	}
 
 	/* Comentarios */
-	/* Comentarios  */
 	.comentarios{
 		background: rgba(0,0,0,.08);
 	}
@@ -703,6 +703,7 @@
 	}
 	#menu_responsy a{
 		padding: 10px;
+		cursor: pointer;
 	}	
 
 	@media screen and (max-width: 800px){
@@ -716,6 +717,88 @@
 		#menu_responsy{
 			display: flex;
 		}
+
+		#equipo ul li{
+			width: 100%;
+			display: block;
+			margin-bottom: 20px;
+		}
+
+
+		.text_img{
+			display: block;
+			padding: 30px 20px;
+		}
+		.text_img .img{
+			width: 100%;
+			margin: 20px 0px 0px 0px;
+		}
+		.text_img .img img{
+			width: 100%;
+		}
+		.text_img .text{
+			width: 100%;
+		}
+
+		.img_text2 .text{
+			width: 100%;
+			position: relative;
+			z-index: 1000;
+			margin: 20px auto;
+			margin-left: 0px;
+			background: white;
+			height: 500px;
+			padding: 30px;
+			display: block;
+			border: 1px solid rgba(0,0,0,.1);
+		}
+		.img_text2 .img{
+			width: 100%;
+			background: orange;
+			height: 400px;
+			display: block;
+			margin-left: 0px;
+		}
+
+
+
+		.comentarios .listComentarios, .comentarios .titulo{
+			float: left;
+		}
+		.comentarios .listComentarios{
+			width: 100%;
+			padding: 20px 0px 0px 0px;
+		}
+		.comentarios .titulo{
+			width: 100%;
+			margin-top: 40px;
+		}
+		.comentarios .listComentarios ul li{
+			width: 100%;
+			display: block;
+		}
+
+		/*   */
+		.linea_tiempo{
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			background: rgba(0, 0, 0, .07);
+			margin: auto;
+			height: 1300px;
+			padding: 100px 20px;
+		}
+		.linea_tiempo .left{
+			width: 48%;
+		}
+		.linea_tiempo .center{
+			width: 2%;
+			background: rgba(0, 0, 0, .07);
+		}
+		.linea_tiempo .right{
+			width: 48%;
+		}
+
 	}
 </style>
 
