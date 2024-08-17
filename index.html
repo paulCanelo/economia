@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<link rel="stylesheet" href="iconos/style.css">
+	<title>Document</title>
+	
+</head>
+<body>
+	<div id="menu_responsy">
+		<a onclick="activarMenuNavegacion();" id="btn_menu" class="icon-menu7"></a>
+		<p>PENSAMIENTO ECONOMICO</p>
+	</div>
+	<div id="menu_navegacion">
+		<div style="padding: 20px 14px;">
+			<h1 style="color: white;">ECONOMIA</h1>
+			<p style="color: white;">PENSAMIENTO ECONOMICO</p>
+		</div>
+		<ul>
+			<li id="menu_equipo"><a onclick="activarMenu('menu_equipo')" class="active">EQUIPO DE TRABAJO</a></li>
+			<li id="menu_introduccion"><a onclick="activarMenu('menu_introduccion')">INTRODUCCION</a></li>
+			<li id="menu_griegos"><a onclick="activarMenu('menu_griegos')">GRIEGOS</a></li>
+			<li id="menu_romanos"><a onclick="activarMenu('menu_romanos')">ROMANOS</a></li>
+			<li id="menu_escolasticos"><a onclick="activarMenu('menu_escolasticos')">ESCOLASTICOS</a></li>
+			<li id="menu_conclusiones"><a onclick="activarMenu('menu_conclusiones')">COMPARACION Y CONCLUSIONES</a></li>
+		</ul>
+	</div>
+	<div id="contenido">
+		<div id="equipo" class="seccion clearfix">
+			<div class="titulo">
+				<p>NUESTRO EQUIPO</p> <!-- Borde antes -->
+				<h1>MIEMBROS DEL PROYECTO</h1>
+			</div>
+			<ul>
+				<li>
+					<img src="imagenes/camila.jpeg">
+					<div class="text clearfix">
+						<p>YERLIN CAMILA NASSCAN RIVERA</p>
+					</div>
+				</li>
+				<li>
+					<img src="imagenes/yhancarlo.jpeg">
+					<div class="text clearfix">
+						<p>DAVID YHANCARLO GÓMEZ DELGADO</p>
+					</div>
+				</li>
+				<li>
+					<img src="imagenes/perfil.jpg">
+					<div class="text clearfix">
+						<p>PAUL RICARDO GONZALEZ CANELO</p>
+					</div>
+				</li>
+				<li>
+					<img src="imagenes/perfil.jpg">
+					<div class="text clearfix">
+						<p>DIEGO ALEJANDRO QUINTERO NARANJO</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="Introduccion">
+			<div class="text_img clearfix">
+				<div class="text">
+					<div class="titulo" style="margin-bottom: 20px;">
+						<p>BIENVENIDOS</p> <!-- Borde antes -->
+						<h1>APORTES DE LOS GRIEGOS, ROMANOS Y ESCOLASTICOS A LA ECONOMIA MODERNA</h1>
+					</div>
+					<p style="line-height: 1.6em;color: rgba(0,0,0,.7);">EN ESTE BLOG SE EXPLICARÁ LAS DOCTRINAS ECONÓMICAS DE LOS GRIEGOS, ROMANOS Y ESCOLÁSTICOS PERTENECIENTES AL MUNDO ANTIGUO QUE SENTARON LAS BASES DE LA ECONOMÍA MODERNA GRACIAS A QE FUERON MUY ACTIVOS Y PERSPICACES PENSADORES ECONÓMICOS Y SE ACERCARON A LOS PROBLEMAS ECONÓMICOS DE UNA FORMA QUE SE PUEDE RECONOCER COMO MUY MODERNA PUES ABOCARON MUCHOS DE LOS TEMAS ECONÓMICOS DE UNA FORMA QUE HOY SE RECONOCE COMO PARTE DE LA ACTUAL CIENCIA ECONÓMICA.</p>
+				</div>
+				<div class="img">
+					<img src="imagenes/introduccion.jpg">
+				</div>
+			</div>
+		</div>
+		<div id="griegos_resumen">
+			<div class="img_text">
+				<div class="img">
+					<img src="imagenes/antiguo.jpeg" alt="">
+				</div>
+				<div class="text">
+					<div class="titulo" style="margin-bottom: 20px;">
+						<p>INTRODUCCION</p> <!-- Borde antes -->
+						<h1>MUNDO ANTIGUO</h1>
+					</div>
+					<p style="line-height: 1.6em;color: rgba(0,0,0,.7);">EL MUNDO ANTIGUO, SEGÚN LA VISIÓN EUROPEA, ABARCA DESDE LA PREHISTORIA EN ASIA MENOR Y NORTE DE ÁFRICA HASTA LA EDAD MEDIA EUROPEA. ESTAS REGIONES DESTACARON POR SU CONTROL ESTATAL SOBRE LA AGRICULTURA Y MINERÍA, COMERCIO INDEPENDIENTE, Y PRODUCCIÓN ARTESANAL, CON UNA EVOLUCIÓN EN LA LEGISLACIÓN Y EL SISTEMA MONETARIO, DESTACANDO EL USO DEL ELECTRO EN LIDIA (600 A.C.). LAS IDEAS ECONÓMICAS GRIEGAS INFLUYERON EN EL PENSAMIENTO MODERNO, PERO LA CAÍDA DEL IMPERIO ROMANO DE OCCIDENTE LLEVÓ A UN SISTEMA ECONÓMICO FEUDAL EN EUROPA, BASADO EN EL RÉGIMEN SEÑORIAL Y EL CRISTIANISMO, QUE PREDOMINÓ HASTA LA FORMACIÓN DE UN SISTEMA FEUDAL AUTÁRQUICO Y RUDIMENTARIO.</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- GRIEGOS -->
+		<div id="griegos_aportes">
+			<div class="img_text2 clearfix">
+				<div class="img">
+					<img src="imagenes/griegos.png" alt="" style="width: 100%;">
+				</div>
+				<div class="text">
+					<div class="titulo" style="margin-bottom: 20px;">
+						<p>GRIEGOS</p> <!-- Borde antes -->
+						<h1>PRINCIPALES APORTES</h1>
+					</div>
+					<p style="line-height: 1.6em;color: rgba(0,0,0,.7);">AUNQUE LOS PUEBLOS ANTERIORES A LOS GRIEGOS, COMO LOS DE AMÉRICA, ASIA Y ÁFRICA, HICIERON IMPORTANTES APORTES ECONÓMICOS, ESTOS SE CONOCEN POCO. LOS GRIEGOS DESARROLLARON IDEAS ECONÓMICAS AVANZADAS EN LOS SIGLOS V Y VI, INFLUENCIADOS POR JENOFONTE, PLATÓN Y ARISTÓTELES, Y CONCEPTOS MODERNOS COMO EFICIENCIA, ESPECIALIZACIÓN Y FUNCIÓN DEL ESTADO. ESTOS APORTES FUERON PRESERVADOS POR LOS ÁRABES Y RESCATADOS POR LOS EUROPEOS DURANTE EL RENACIMIENTO, INFLUYENDO EN LA CIENCIA ECONÓMICA ACTUAL.</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="seccion clearfix comentarios">
+			<div class="titulo">
+				<p>APORTES</p> <!-- Borde antes -->
+				<h1>PRINCIPALES APORTES DE LOS GRIEGOS</h1>
+			</div>
+			<div class="clearfix listComentarios">
+				<ul>
+					<li>
+						<div id="mensaje">
+							<div id="encabezado" class="clearfix">
+								<div class="text">
+									<p></p>
+									<p>COMPANY</p>
+								</div>
+								<span class="icon-right-quote"></span>
+							</div>
+							<p class="mensaje">COMPANY IS VERY GOOD, TOP FIRST COMPANYS DEVELOP, TOP FIRST COMPANYS DEVELOP.</p>
+						</div>
+						<img src="imagenes/perfil.jpg">
+					</li>
+
+					<li>
+						<div id="mensaje">
+							<div id="encabezado" class="clearfix">
+								<div class="text">
+									<p>JANET JACKSON</p>
+									<p>COMPANY</p>
+								</div>
+								<span class="icon-right-quote"></span>
+							</div>
+							<p class="mensaje">COMPANY IS VERY GOOD, TOP FIRST COMPANYS DEVELOP, TOP FIRST COMPANYS DEVELOP.</p>
+						</div>
+						<img src="imagenes/perfil.jpg">
+					</li>
+
+					<li>
+						<div id="mensaje">
+							<div id="encabezado" class="clearfix">
+								<div class="text">
+									<p>JANET JACKSON</p>
+									<p>COMPANY</p>
+								</div>
+								<span class="icon-right-quote"></span>
+							</div>
+							<p class="mensaje">COMPANY IS VERY GOOD, TOP FIRST COMPANYS DEVELOP, TOP FIRST COMPANYS DEVELOP.</p>
+						</div>
+						<img src="imagenes/perfil.jpg">
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="linea_tiempo">
+			<div class="left">
+				<div class="text_li">
+					<div class="contenedor_li">
+						<div class="circle_li"></div>
+						<p class="titulo">TITULO DE ESTE MENU</p>
+						<p class="subtitulo">LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. VOLUPTATEM QUISQUAM VERITATIS MAXIME QUIA COMMODI, SUSCIPIT VOLUPTATUM! FUGIT, QUISQUAM PROVIDENT AB, PORRO ACCUSAMUS DOLOR VOLUPTAS ASPERNATUR FUGIAT PERSPICIATIS EA. ANIMI, MODI?</p>
+					</div>
+				</div>
+				<div class="titulo_li">TITULO D ESTE MENUY</div>
+				<div class="text_li">
+					<div class="contenedor_li">
+						<div class="circle_li"></div>
+						<p class="titulo">TITULO DE ESTE MENU</p>
+						<p class="subtitulo">LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. VOLUPTATEM QUISQUAM VERITATIS MAXIME QUIA COMMODI, SUSCIPIT VOLUPTATUM! FUGIT, QUISQUAM PROVIDENT AB, PORRO ACCUSAMUS DOLOR VOLUPTAS ASPERNATUR FUGIAT PERSPICIATIS EA. ANIMI, MODI?</p>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<span class="linea_li"></span>
+				<span class="linea_li"></span>
+				<span class="linea_li"></span>
+			</div>
+			<div class="right">
+				<div class="titulo_li">TITULO D ESTE MENUY</div>
+				<div class="text_li">
+					<div class="contenedor_li">
+						<div class="circle_li"></div>
+							<p class="titulo">TITULO DE ESTE MENU</p>
+							<p class="subtitulo">LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. VOLUPTATEM QUISQUAM VERITATIS MAXIME QUIA COMMODI, SUSCIPIT VOLUPTATUM! FUGIT, QUISQUAM PROVIDENT AB, PORRO ACCUSAMUS DOLOR VOLUPTAS ASPERNATUR FUGIAT PERSPICIATIS EA. ANIMI, MODI?.</p>
+					</div>
+				</div>
+				<div class="titulo_li">TITULO D ESTE MENUY</div>
+			</div>
+		</div>
+
+
+		<!-- ROMANOS -->
+		<div id="romanos">
+			<div class="img_text2 clearfix">
+				<div class="img" style="width: 45%;overflow: hidden;">
+					<img src="imagenes/romanos.jpg" alt="" style="width: 100%;">
+				</div>
+				<div class="text">
+					<div class="titulo" style="margin-bottom: 20px;">
+						<p>ROMANOS</p> <!-- Borde antes -->
+						<h1>PRINCIPALES APORTES</h1>
+					</div>
+					<p style="line-height: 1.6em;color: rgba(0,0,0,.7);">PENDIENTE DE INFORMACIÓN.</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="comentarios seccion clearfix">
+			<div class="titulo">
+				<p>APORTES</p> <!-- Borde antes -->
+				<h1>PRINCIPALES APORTES DE LOS ROMANOS</h1>
+			</div>
+			<div class="listComentarios clearfix">
+				<ul>
+					<li>
+						<div id="mensaje">
+							<div id="encabezado" class="clearfix">
+								<div class="text">
+									<p></p>
+									<p>COMPANY</p>
+								</div>
+								<span class="icon-right-quote"></span>
+							</div>
+							<p class="mensaje">COMPANY IS VERY GOOD, TOP FIRST COMPANYS DEVELOP, TOP FIRST COMPANYS DEVELOP.</p>
+						</div>
+						<img src="imagenes/perfil.jpg">
+					</li>
+
+					<li>
+						<div id="mensaje">
+							<div id="encabezado" class="clearfix">
+								<div class="text">
+									<p>JANET JACKSON</p>
+									<p>COMPANY</p>
+								</div>
+								<span class="icon-right-quote"></span>
+							</div>
+							<p class="mensaje">COMPANY IS VERY GOOD, TOP FIRST COMPANYS DEVELOP, TOP FIRST COMPANYS DEVELOP.</p>
+						</div>
+						<img src="imagenes/perfil.jpg">
+					</li>
+
+					<li>
+						<div id="mensaje">
+							<div id="encabezado" class="clearfix">
+								<div class="text">
+									<p>JANET JACKSON</p>
+									<p>COMPANY</p>
+								</div>
+								<span class="icon-right-quote"></span>
+							</div>
+							<p class="mensaje">COMPANY IS VERY GOOD, TOP FIRST COMPANYS DEVELOP, TOP FIRST COMPANYS DEVELOP.</p>
+						</div>
+						<img src="imagenes/perfil.jpg">
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="linea_tiempo">
+			<div class="left">
+				<div class="text_li">
+					<div class="contenedor_li">
+						<div class="circle_li"></div>
+						<p class="titulo">TITULO DE ESTE MENU</p>
+						<p class="subtitulo">LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. VOLUPTATEM QUISQUAM VERITATIS MAXIME QUIA COMMODI, SUSCIPIT VOLUPTATUM! FUGIT, QUISQUAM PROVIDENT AB, PORRO ACCUSAMUS DOLOR VOLUPTAS ASPERNATUR FUGIAT PERSPICIATIS EA. ANIMI, MODI?</p>
+					</div>
+				</div>
+				<div class="titulo_li">TITULO D ESTE MENUY</div>
+				<div class="text_li">
+					<div class="contenedor_li">
+						<div class="circle_li"></div>
+						<p class="titulo">TITULO DE ESTE MENU</p>
+						<p class="subtitulo">LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. VOLUPTATEM QUISQUAM VERITATIS MAXIME QUIA COMMODI, SUSCIPIT VOLUPTATUM! FUGIT, QUISQUAM PROVIDENT AB, PORRO ACCUSAMUS DOLOR VOLUPTAS ASPERNATUR FUGIAT PERSPICIATIS EA. ANIMI, MODI?</p>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<span class="linea_li"></span>
+				<span class="linea_li"></span>
+				<span class="linea_li"></span>
+			</div>
+			<div class="right">
+				<div class="titulo_li">TITULO D ESTE MENUY</div>
+				<div class="text_li">
+					<div class="contenedor_li">
+						<div class="circle_li"></div>
+							<p class="titulo">TITULO DE ESTE MENU</p>
+							<p class="subtitulo">LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. VOLUPTATEM QUISQUAM VERITATIS MAXIME QUIA COMMODI, SUSCIPIT VOLUPTATUM! FUGIT, QUISQUAM PROVIDENT AB, PORRO ACCUSAMUS DOLOR VOLUPTAS ASPERNATUR FUGIAT PERSPICIATIS EA. ANIMI, MODI?.</p>
+					</div>
+				</div>
+				<div class="titulo_li">TITULO D ESTE MENUY</div>
+			</div>
+		</div>
+
+
+
+
+		<!-- ESCOLASTICOS -->
+		<div id="romanos">
+			<div class="img_text2 clearfix">
+				<div class="img" style="width: 45%;">
+					<img src="imagenes/escolasticos.jpeg" alt="" style="width: 100%;">
+				</div>
+				<div class="text">
+					<div class="titulo" style="margin-bottom: 20px;">
+						<p>ESCOLASTICOS</p> <!-- Borde antes -->
+						<h1>PRINCIPALES APORTES</h1>
+					</div>
+					<p style="line-height: 1.6em;color: rgba(0,0,0,.7);">LA ECONOMÍA ESCOLÁSTICA ES UNA CORRIENTE DE PENSAMIENTO ECONÓMICO QUE SURGIÓ DURANTE LA EDAD MEDIA EN EUROPA. LA FILOSOFÍA ECONÓMICA ESCOLÁSTICA SE CARACTERIZÓ POR SU ENFOQUE EN LA MORAL Y LA ÉTICA EN LAS PRÁCTICAS ECONÓMICAS. LA TEORÍA ECONÓMICA ESCOLÁSTICA SE BASÓ EN GRAN MEDIDA EN LA OBRA DE SANTO TOMÁS DE AQUINO, UNO DE LOS PENSADORES MÁS DESTACADOS DE LA ÉPOCA Y POR LA ESCUELA MEDIEVAL. LA ECONOMÍA MEDIEVAL SE VIO INFLUENCIADA POR ESTA CORRIENTE Y POR LA ESCUELA DE SALAMANCA, QUE TUVO UN PAPEL CRUCIAL EN EL DESARROLLO DE LA ECONOMÍA ESCOLÁSTICA</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="comentarios seccion clearfix">
+			<div class="titulo">
+				<p>APORTES</p> <!-- Borde antes -->
+				<h1>PRINCIPALES APORTES DE LOS ROMANOS</h1>
+			</div>
+			<div class="listComentarios clearfix">
+				<ul>
+					<li>
+						<div id="mensaje">
+							<div id="encabezado" class="clearfix">
+								<div class="text">
+									<p></p>
+									<p>COMPANY</p>
+								</div>
+								<span class="icon-right-quote"></span>
+							</div>
+							<p class="mensaje">COMPANY IS VERY GOOD, TOP FIRST COMPANYS DEVELOP, TOP FIRST COMPANYS DEVELOP.</p>
+						</div>
+						<img src="imagenes/perfil.jpg">
+					</li>
+
+					<li>
+						<div id="mensaje">
+							<div id="encabezado" class="clearfix">
+								<div class="text">
+									<p>JANET JACKSON</p>
+									<p>COMPANY</p>
+								</div>
+								<span class="icon-right-quote"></span>
+							</div>
+							<p class="mensaje">COMPANY IS VERY GOOD, TOP FIRST COMPANYS DEVELOP, TOP FIRST COMPANYS DEVELOP.</p>
+						</div>
+						<img src="imagenes/perfil.jpg">
+					</li>
+
+					<li>
+						<div id="mensaje">
+							<div id="encabezado" class="clearfix">
+								<div class="text">
+									<p>JANET JACKSON</p>
+									<p>COMPANY</p>
+								</div>
+								<span class="icon-right-quote"></span>
+							</div>
+							<p class="mensaje">COMPANY IS VERY GOOD, TOP FIRST COMPANYS DEVELOP, TOP FIRST COMPANYS DEVELOP.</p>
+						</div>
+						<img src="imagenes/perfil.jpg">
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="linea_tiempo">
+			<div class="left">
+				<div class="text_li">
+					<div class="contenedor_li">
+						<div class="circle_li"></div>
+						<p class="titulo">SANTO TOMAS DE AQUINO</p>
+						<p class="subtitulo">SANTO TOMÁS DE AQUINO ABORDÓ LA ECONOMÍA DESDE UNA PERSPECTIVA ÉTICA Y DE JUSTICIA, ENFATIZANDO QUE DEBE SATISFACER NECESIDADES HUMANAS Y PROMOVER EL BIEN COMÚN. ABOGÓ POR PRECIOS JUSTOS Y BENEFICIOS EQUITATIVOS EN LOS INTERCAMBIOS. TAMBIÉN CUESTIONÓ TEMAS COMO LA LEGALIDAD DE VENDER A PRECIOS SUPERIORES AL JUSTO, LA VALIDEZ DE VENTAS CON PRODUCTOS DEFECTUOSOS, LA OBLIGACIÓN DE INFORMAR SOBRE DEFECTOS, Y LA VENTA A PRECIOS MÁS ALTOS QUE EL DE COMPRA.</p>
+					</div>
+				</div>
+				<div class="titulo_li">TITULO D ESTE MENUY</div>
+			</div>
+			<div class="center">
+				<span class="linea_li"></span>
+				<span class="linea_li"></span>
+			</div>
+			<div class="right">
+				<div class="titulo_li">TITULO D ESTE MENUY</div>
+				<div class="text_li">
+					<div class="contenedor_li">
+						<div class="circle_li"></div>
+							<p class="titulo">ESCUELA SALAMANCA</p>
+							<p class="subtitulo">LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. VOLUPTATEM QUISQUAM VERITATIS MAXIME QUIA COMMODI, SUSCIPIT VOLUPTATUM! FUGIT, QUISQUAM PROVIDENT AB, PORRO ACCUSAMUS DOLOR VOLUPTAS ASPERNATUR FUGIAT PERSPICIATIS EA. ANIMI, MODI?.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	
+</body>
+</html>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		text-decoration: none;
+		font-family: 'roboto';
+	}
+	#menu_navegacion{
+		display: block;
+		width: 20%;
+		float: left;
+		background: orange;
+		position: fixed;
+		height: 100%;
+		float: left;
+		z-index: 1000;
+	}
+	#menu_navegacion ul li a{
+		padding: 20px 14px;
+		display: block;
+		border-left: 4px solid transparent;
+		color: white;
+	}
+	.active{
+		background: white;
+		color: orange !important;
+		border-left: 4px solid black;
+	}
+	#contenido{
+		width: 80%;
+		right: 0;
+		height: 100%;
+		padding: 20px;
+		overflow-y: scroll;
+		float: left;
+		height: 100%;
+		position: fixed;
+		float: left;
+	}
+
+	/**/
+	.seccion{
+		padding: 100px 20px 160px 20px;
+	}
+
+	/* Clearfix */
+	.clearfix:before,.clearfix:after{
+		display:table;
+		content: "";
+	}
+	.clearfix:after{
+	   	clear: both;
+	}
+
+	/*   */
+	/* Equipo */
+	#equipo{
+		width: 100%;
+		background: rgba(0,0,0,.04);
+	}
+	#equipo ul li{
+		width: 25%;
+		float: left;
+		list-style: none;
+		padding: 20px;
+	}
+	#equipo ul li img{
+		width: 100%;
+	}
+	#equipo ul li .text{
+		background: white;
+		width: 90%;
+		margin: -30px auto;
+		padding: 20px 10px;
+		text-align: center;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,.1);
+	}
+	#equipo ul li .text p:first-child{
+		font-weight: bold;
+	}
+	#equipo ul li .text p:nth-child(2){
+		color: orange;
+		margin: 10px 0;
+		font-size: 14px;
+	}
+	#equipo ul li .text a{
+		text-decoration: none;
+		padding: 5px;
+		display: inline-block;
+		border: 1px solid rgba(0,0,0,.05);
+		border-radius: 100%;
+	}
+	#equipo ul li img{
+		z-index: -1;
+		position: relative;
+	}
+	#equipo .titulo{
+		text-align: center;
+	}
+
+	/* Titulo */
+	.titulo{
+		margin-bottom: 100px;
+	}
+	.titulo p{
+		color: orange;
+		border-bottom: 2px solid orange;
+		padding: 10px 0;
+		margin: 10px 0px;
+		display: inline-block;
+	}
+
+	/* Comentarios */
+	/* Comentarios  */
+	.comentarios{
+		background: rgba(0,0,0,.08);
+	}
+	.comentarios .listComentarios, .comentarios .titulo{
+		float: left;
+	}
+	.comentarios .titulo h1{
+		font-size: 60px;
+	}
+	.comentarios .listComentarios{
+		width: 70%;
+		padding: 100px 0px 0px 0px;
+	}
+	.comentarios .titulo{
+		width: 30%;
+		margin-top: 40px;
+	}
+	.comentarios .listComentarios ul li{
+		width: 33.3%;
+		float: left;
+		list-style: none;
+		padding: 10px;
+	}
+	.comentarios .listComentarios ul li #mensaje{
+		background: white;
+		position: relative;
+		padding: 20px;
+	}
+	.comentarios .listComentarios ul li #mensaje #encabezado{
+		border-bottom: 1px solid rgba(0,0,0,.4);
+	}
+	.comentarios .listComentarios ul li img{
+		border-radius: 100%;
+		width: 20%;
+		display: block;
+		margin: 20px 10px 10px 10px;
+	}
+	.comentarios .listComentarios ul li #mensaje #encabezado .text{
+		width: 85%;
+		float: left;
+	}
+	.comentarios .listComentarios ul li #mensaje #encabezado span{
+		font-size: 30px;
+		float: left;
+		color: orange;
+	}
+	.comentarios .listComentarios ul li #mensaje #encabezado p:first-child{
+		font-weight: bold;
+	}
+	.comentarios .listComentarios ul li #mensaje #encabezado p:last-child{
+		color: rgba(0,0,0,.8);
+		font-size: 14px;
+		margin: 10px 0px;
+	}
+	.comentarios .listComentarios ul li #mensaje .mensaje{
+		color: rgba(0,0,0,.8);
+		font-size: 14px;
+		margin: 10px 0px;
+		text-align: justify;
+		line-height: 24px;
+	}
+	.comentarios .listComentarios ul li #mensaje:after{
+		position: absolute;
+		content: ' ';
+		border-top: 20px solid white;
+		border-right: 20px solid transparent;
+		top: 100%;
+		left: 0;
+	}
+
+	/* Griegos */
+	#griegos{
+		background: rgba(0,0,0,.08);
+		padding: 40px;
+	}
+	/* TEXTO Y IMAGEN  */
+	.text_img{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30px 10%;
+	}
+	.text_img .img{
+		width: 40%;
+		height: 500px;
+		margin: 90px 0px 0px 0px;
+	}
+	.text_img .text{
+		width: 50%;
+	}
+
+
+	.img_text{
+		
+	}
+	.img_text .text{
+		width: 90%;
+		margin: -100px auto;
+		background: white;
+		height: 500px;
+		padding: 30px;
+		margin-bottom: 20px;
+	}
+	.img_text .img{
+		width: 100%;
+		background: orange;
+		height: 480px;
+		margin: -20px auto;
+		overflow: hidden;
+		position: relative;
+		z-index: -100;
+	}
+	.img_text .img img{
+		width: 100%;
+		height: auto;
+		z-index: -1;
+	}
+
+	.img_text2{
+		padding: 40px 0px;
+	}
+	.img_text2 .text{
+		width: 40%;
+		position: relative;
+		z-index: 1000;
+		margin: 300px auto;
+		margin-left: -100px;
+		background: white;
+		height: 600px;
+		padding: 30px;
+		float: left;
+		border: 1px solid rgba(0,0,0,.1);
+	}
+	.img_text2 .img{
+		width: 40%;
+		background: orange;
+		height: 400px;
+		float: left;
+		margin-left: 50px;
+	}
+
+	/*   */
+	.linea_tiempo{
+		display: flex;
+		justify-content: space-between;
+		width: 60%;
+		background: rgba(0, 0, 0, .07);
+		margin: auto;
+		height: 1300px;
+		padding: 200px 20px;
+	}
+	.linea_tiempo .left{
+		width: 48%;
+	}
+	.linea_tiempo .center{
+		width: 2%;
+		background: rgba(0, 0, 0, .07);
+	}
+	.linea_tiempo .right{
+		width: 48%;
+	}
+
+	.titulo_li, .text_li, .linea_li{
+		padding: 20px;
+		margin: auto;
+		display: block;
+	}
+	.linea_li{
+		margin: 130px 0px 260px 0px;
+	}
+	.titulo_li{
+		color: orange;
+		margin: 120px 0px;
+		/*margin: 240px 0px 120px;*/
+	}
+	.linea_li{
+		background: orange;
+		border-radius: 100%;
+		/*margin: 250px 0px 250px;*/
+		width: 20px;
+		height: 20px;
+		margin-left: -10px;
+	}
+	.contenedor_li{
+		background: white;
+		padding: 20px;
+		position: relative;
+	}
+	.linea_tiempo .right .titulo_li{
+		margin-left: 20px;
+	}
+	.linea_tiempo .left .titulo_li{
+		margin-right: 20px;
+		text-align: right;
+	}
+	
+
+
+	
+	.contenedor_li .circle_li{
+		background: orange;
+		position: absolute;
+		padding: 60px;
+		display: block;
+		top: -60px;
+		border-radius: 300px;
+	}
+	.linea_tiempo .left .contenedor_li .circle_li{
+		left: -60px;
+	}
+	.linea_tiempo .right .contenedor_li .circle_li{
+		right: -60px;
+	}
+	.contenedor_li .titulo{
+		font-weight: bold;
+		margin: 10px 0px;
+		text-align: center;
+	}
+	.contenedor_li .subtitulo{
+		line-height: 1.4em;
+		color: rgba(0,0,0,.7);
+		font-size: 16px;
+		text-align: justify;
+	}
+
+	#menu_responsy{
+		padding: 20px;
+		width: 100%;
+		background: orange;
+		color: white;
+		align-items: center;
+		display: none;
+	}
+	#menu_responsy a{
+		padding: 10px;
+	}	
+
+	@media screen and (max-width: 800px){
+		#menu_navegacion{
+			width: 80%;
+			background: red;
+			left: -90%;
+		}
+		#contenido{
+			width: 100%;
+		}
+		#menu_responsy{
+			display: flex;
+		}
+	}
+</style>
+
+<script>
+	function activarMenu(menu){
+		switch (menu) {
+		  case 'menu_equipo':
+			  	$('#contenido').animate({
+		        	scrollTop: '0'
+		      	}, 300);
+		    break
+		  case 'menu_navegacion':
+		  		$('#contenido').animate({
+		        	scrollTop: '900px'
+		      	}, 300);
+		    break
+		  case 'menu_conclusiones':
+		  		$('#contenido').animate({
+		        	scrollTop: '500px'
+		      	}, 300);
+		    break
+		  default:
+		  		$('#contenido').animate({
+		        	scrollTop: '200px'
+		      	}, 300);
+		    break
+		}
+
+		$('#menu_navegacion ul li > a').removeClass('active')
+      	$('#menu_navegacion ul #'+menu+' > a').addClass('active')
+	}
+
+	var contador = 0;
+	function activarMenuNavegacion(){
+		
+		$('#menu_navegacion').animate({
+			left: contador == 0 ? '0' : '-90%'
+		});
+
+		if(contador == 0){
+			$('#btn_menu').removeClass('icon-menu7')
+			$('#btn_menu').addClass('icon-close4')
+		} else{
+			$('#btn_menu').removeClass('icon-close4')
+			$('#btn_menu').addClass('icon-menu7')
+		}		
+		contador = contador == 0 ? '1' : '0';
+		console.log(contador);
+	}
+</script>
