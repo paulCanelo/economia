@@ -882,56 +882,6 @@
 </style>
 
 <script>
-	function activarMenu(menu){
-		/*switch (menu) {
-		  case 'menu_equipo':
-			  	$('#contenido').animate({
-		        	scrollTop: '0'
-		      	}, 300);
-		    break
-			case 'menu_bienvenida':
-		  		$('#contenido').animate({
-		        	scrollTop: '700px'
-		      	}, 300);
-		    break
-
-			case 'menu_introduccion':
-		  		$('#contenido').animate({
-		        	scrollTop: '1600px'
-		      	}, 300);
-		    break
-		  case 'menu_griegos':
-		  		$('#contenido').animate({
-		        	scrollTop: '2600px'
-		      	}, 300);
-		    break
-
-		case 'menu_romanos':
-			$('#contenido').animate({
-				scrollTop: '5500px'
-			}, 300);
-		    break
-			
-		case 'menu_escolasticos':
-			$('#contenido').animate({
-				scrollTop: '7800px'
-			}, 300);
-		    break
-		case 'menu_bibliografia':
-			$('#contenido').animate({
-				scrollTop: '11100px'
-			}, 300);
-		    break
-		  default:
-		  		$('#contenido').animate({
-		        	scrollTop: '10300px'
-		      	}, 300);
-		    break
-		}*/
-
-		$('#menu_navegacion ul li > a').removeClass('active')
-      	$('#menu_navegacion ul #'+menu+' > a').addClass('active')
-	}
 
 	var contador = 0;
 	function activarMenuNavegacion(){
@@ -953,13 +903,11 @@
 
 
 
-$('#menu_navegacion ul li a').on('click', function(e){
+$('a[href="#"]').on('click', function(e){
 	$('#contenido').animate({
 		scrollTop: $($(this).attr('href')).offset().top - 100
 	},500);
 	
-
-	console.log("La pantalla", $(window).width());
 	if($(window).width() <= '800'){
 		$('#menu_navegacion').animate({
 			left: '-90%'
